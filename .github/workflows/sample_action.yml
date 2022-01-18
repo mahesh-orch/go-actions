@@ -3,7 +3,7 @@ name: sample_action
 on:
   push:
      branches:
-       - master
+       [master, main]
 jobs:
   sample_action:
     runs-on: ubuntu-18.04
