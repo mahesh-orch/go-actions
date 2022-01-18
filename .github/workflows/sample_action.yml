@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Sample Action
-        run: ehco "sample_action"
+        run: echo "sample_action"
