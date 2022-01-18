@@ -1,0 +1,11 @@
+name: sample_action
+
+on:
+  push:
+     branches:
+       - master
+jobs:
+  sample_action:
+    steps:
+      - name: Sample Action
+        run: ehco "sample action"
