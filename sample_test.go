@@ -2,7 +2,7 @@ package main
 
 import (
   "testing"
-  "/github.com/stretchr/testify/assert"
+  "github.com/stretchr/testify/assert"
 )
 
 func TestSampleFunc (t *testing.T) {
