@@ -7,6 +7,6 @@ import (
 
 func TestSampleFunc (t *testing.T) {
   actual := sampleFunc()
-  expected := "Hello Universe. You are infinite.!"
+  expected := "Hello Universe. You are infinite..!"
   assert.Equal(t, actual, expected)  
 }
