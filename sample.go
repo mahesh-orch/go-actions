@@ -1,5 +1,5 @@
 package main
 
-func sampleFunc() strings {
+func sampleFunc() string {
   return "Hello Universe. You are infinite..!"
 }
