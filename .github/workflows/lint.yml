@@ -24,4 +24,4 @@ jobs:
           go get -u golang.org/x/lint/golint
           
       - name: lint
-        run: golint .
+        run: golint ./..
