@@ -31,13 +31,13 @@ jobs:
           go get github.com/stretchr/testify/assert
       - name: format
         run: |
-          gofmt .
+          gofmt ./...
       - name: lint
         run: |
-          golint .
+          golint ./...
       - name: ver
         run: |
-          go vet .
+          go vet ./...
 
   test:
     runs-on:
@@ -53,10 +53,6 @@ jobs:
         run: |
           go version
           go get github.com/stretchr/testify/assert
-      - name: test
-        run:
-          go test ./...
-          
-      - name: test coverage
+      - name: unit tests / code coverage
         run:
           go test ./... -cover
