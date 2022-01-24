@@ -53,4 +53,4 @@ jobs:
           go get github.com/stretchr/testify/assert
       - name: Run unittests
         run: |
-          go test .
+          go test ./... -cover
