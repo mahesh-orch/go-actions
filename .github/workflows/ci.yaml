@@ -51,3 +51,4 @@ jobs:
       - name: test
         run:
           go test ./...
+          go test ./... -cover
