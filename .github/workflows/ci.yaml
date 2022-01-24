@@ -32,7 +32,7 @@ jobs:
           
       - name: lint
         run: |
-          golint .
+          golint ./...
 
   test:
     runs-on:
