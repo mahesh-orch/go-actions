@@ -29,6 +29,7 @@ jobs:
           gofmt
       - name: Go vet
         run: |
+          go mod init
           go vet
       - name: Golang linting
         run: |
