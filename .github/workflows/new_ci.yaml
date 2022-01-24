@@ -29,14 +29,13 @@ jobs:
           gofmt
       - name: Go vet
         run: |
-          go mod init
-          go vet
+          go vet .
       - name: Golang linting
         run: |
-          golint
+          golint .
       - name: Golang security checker
         run: |
-          gosec
+          gosec .
   #    - name: Build linux binaries
    #     run: |
     #      make build-linux-binaries
