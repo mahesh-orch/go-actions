@@ -29,10 +29,15 @@ jobs:
           go version
           go get -u golang.org/x/lint/golint
           go get github.com/stretchr/testify/assert
-          
+      - name: format
+        run: |
+          gofmt .
       - name: lint
         run: |
-          golint ./...
+          golint .
+      - name: ver
+        run: |
+          go vet .
 
   test:
     runs-on:
