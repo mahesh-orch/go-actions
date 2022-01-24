@@ -27,9 +27,9 @@ jobs:
       - name: Golang format checker
         run: |
           gofmt
-      - name: Go vet
-        run: |
-          go vet .
+   #   - name: Go vet
+   #     run: |
+   #       go vet .
       - name: Golang linting
         run: |
           golint .
