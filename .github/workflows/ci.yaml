@@ -29,7 +29,7 @@ jobs:
           go version
           go get -u golang.org/x/lint/golint
           go get github.com/stretchr/testify/assert
-          go get github.com/securego/gosec/cmd/gosec
+         # go get github.com/securego/gosec/cmd/gosec
       - name: format
         run: |
           gofmt .
@@ -39,9 +39,9 @@ jobs:
       - name: vet
         run: |
           go vet ./...
-      - name: sec
-        run: |
-          gosec ./...
+     # - name: sec
+     #   run: |
+     #     gosec ./...
 
   test:
     runs-on:
