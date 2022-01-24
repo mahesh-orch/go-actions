@@ -33,9 +33,9 @@ jobs:
       - name: Golang linting
         run: |
           golint .
-      - name: Golang security checker
-        run: |
-          gosec .
+     # - name: Golang security checker
+    #    run: |
+   #       gosec .
   #    - name: Build linux binaries
    #     run: |
     #      make build-linux-binaries
