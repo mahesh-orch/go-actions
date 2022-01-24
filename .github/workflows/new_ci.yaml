@@ -26,19 +26,19 @@ jobs:
           go get -u golang.org/x/lint/golint
       - name: Golang format checker
         run: |
-          make fmt      
+          gofmt
       - name: Go vet
         run: |
           make vet
       - name: Golang linting
         run: |
-          make lint
+          golint
       - name: Golang security checker
         run: |
-          make sec
-      - name: Build linux binaries
-        run: |
-          make build-linux-binaries
+          gosec
+  #    - name: Build linux binaries
+   #     run: |
+    #      make build-linux-binaries
   unit_tests:
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +53,4 @@ jobs:
           go get github.com/stretchr/testify/assert
       - name: Run unittests
         run: |
-          make unit-tests
+          go test .
